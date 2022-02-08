@@ -1,31 +1,9 @@
-<h1>Admin::Dashboard</h1>
-
-<div class="panel panel-default">
-
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th colspan="2">Stats</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <%= link_to "Product", admin_products_path %> count
-        </td>
-        <td class="expand">
-          <%= @product_count %>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          Category count
-        </td>
-        <td>
-          <%= @category_count %>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-</div>
+<h1 class="page-header">Welcome Admin </h1>
+<h2>Add a New Product to your Inventory</h2>
+  <div class="well">
+    <%= link_to '+ New Product', [:new, :admin, :product], class: 'btn btn-info' %>
+  </div>
+<h2>Add a New Category</h2>
+  <div class="well">
+    <%= link_to '+ New Category', [:new, :admin, :category], class: 'btn btn-info' %>
+  </div>
